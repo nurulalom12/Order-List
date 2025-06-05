@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Entry</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>📝 Order Form</h2>
+    <form id="orderForm">
+      <input type="text" id="orderId" placeholder="Order ID" required />
+      <input type="text" id="clientName" placeholder="Client Name" required />
+      <select id="status">
+        <option value="Pending">Pending</option>
+        <option value="Processing">Processing</option>
+        <option value="Completed">Completed</option>
+      </select>
+      <input type="text" id="payment" placeholder="Payment (e.g. Paid / Due)" />
+      <input type="date" id="date" />
+      <button type="submit">Submit</button>
+      <div id="message"></div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
